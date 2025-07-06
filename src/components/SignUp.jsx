@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import authService from "../appwrite/auth";
+import authService from "../appwrite/auth.js";
 import { Link, useNavigate } from "react-router-dom";
 import { login } from "../store/authSlice";
 import { Button, Input, Logo } from "./index.js";
@@ -52,7 +52,6 @@ function SignUp() {
 
         <form onSubmit={handleSubmit(create)}>
           <div className="space-y-5">
-            
             {/* Name */}
 
             <Input
