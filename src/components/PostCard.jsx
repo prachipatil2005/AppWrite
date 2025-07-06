@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import appWriteService from "react-router-dom";
+// import appWriteService from "react-router-dom";
+import appWriteService from "../appwrite/config";
 
 function PostCard({ $id, title, featuredImage }) {
   return (
@@ -9,7 +10,7 @@ function PostCard({ $id, title, featuredImage }) {
       <div className="w-full bg-gray-100 rounded-xl p-4">
         <div className="w-full justify-center mb-4">
           <img
-            src={appWriteService.getFilePreview(featuredImage)}
+            src={appWriteService.getFileView(featuredImage)}
             alt={title}
             className="rounded-xl"
           />
